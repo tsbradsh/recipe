@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+html {
+    color: #0D0D0D;
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    width: 414px;
+}
+main {
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 200px;
+    margin-top: 0;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    margin: 0 0 0 15px;
+}
+h4 {
+    display: none;
+}
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+nav span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #EB5428;
+}
+menu li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #EB5428;
+}
+#social li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+footer {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+nav a {
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+a:visited, a:active {
+    color: inherit;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: solid 3px #eb5428;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+main {
+    display: grid;
+    grid-column:1fr;
+}
+#social {
+    position: relative;
+    bottom: 0;
+}
+#navicons {
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto;
+}
+#navicons img {
+    transform: scale(.5);
+}
+#navicons span {
+    margin: 0;
+}
+#checkbox:checked ~ nav #navicons {
+    visibility: visible;
+    max-height: fit-content;
+    width: 414px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    margin: 0 auto;
+    z-index: 1;
+    transition: all .5s ease-in-out;           
+}
+#checkbox {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+#hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 103.5px;
+    height: 80px;
+    position: relative;
+    left: 0;     
+}
+.tacos {
+    max-width: 100%;
+    height: auto;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foodicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: solid 2px transparent;
+}
+.foodicon:hover {
+    background-color: #eb5428;
+    border: solid 2px #ffffff;
+    transition: all ease .5s;
+}
+.foodicon:hover span {
+    color: #ffffff;
+    transition: all ease .25s;
+}
+.foodicon span {
+    position: relative;
+    bottom: 50px;
+}
+#interactions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 10px;
+}
+#social {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+}
+#spyglass {
+    background-color: #EB5428;
+}
+#searchbar {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    position: absolute;
+    top: 125px;
+    margin-left: 75px;
+    flex-wrap: nowrap;
+}
+#searchbar input:focus {
+    background-color: #eb5428;
+    color: #ffffff;
+    outline: none;
+    transition: all ease 1s;
+}
+form {
+    display: flex;
+    flex-direction: row;
+}
+#submit {
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+}
+#details {
+    list-style: none;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+#ingredients {
+    line-height: 2em;
+    padding-left: 20px;
+}
+#tacoshell p {
+   margin: 15px; 
+   line-height: 1.5em;
+}
+#directions {
+    padding-left: 25px;
+    line-height: 1.5em;
+}
+#directions li {
+    padding-left: 15px;
+}
+.dishwrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-bottom: 25px;
+
+}
+.dishwrapper img {
+    width: 100px;
+    height: 100px;
+}
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    font-size: 25px;
+    color: #ffffff;
+}
+.star:hover,
+.star:hover ~ .star {
+  color: #eb5428;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+  cursor: pointer;
+}
+dd, dt {
+    margin-left: 15px;
+    line-height: 1.5em;
+}
+#sides {
+    background-color: #7abfbf;
+}
+#dishtitle {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#utensils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb5428;
+    width: 207px;
+    height: 80px;
+}
+#utensils span {
+    display: none;
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 414px;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 2px -2px #0d0d0d;
+}
+#signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 103.5px;
+    position: relative;
+    right: 0;
+    background-color: #ffffff;
+}
+#cheesington {
+    transform: scale(0.5);
+    position: relative;
+    bottom: 100px;
+    right: 35px;
+}
+footer {
+    height:425px;
+}
+footer p{
+    position: relative;
+    bottom: 175px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    body, main {
+        width: 768px;
+    }
+    nav {
+        height: 260px;
+        width: 768px;
+    }
+    #hamburger {
+        visibility: hidden;
+        width: 0;
+        padding: 0;
+    }
+    #navicons {
+        visibility: visible;
+        overflow: visible;
+        height: 100px;
+        width: 768px;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    #searchbar {
+        position: absolute;
+        top: 25px;
+        margin-left: 350px;
+    }
+    #navicons img {
+        transform: scale(.375);
+    }
+    .foodicon {
+        width: 100px;
+        position: relative;
+        right: 80px;
+        top: 62px;
+        height: 180px;
+    }
+    #signup {
+        position: absolute;
+        left: 665px;
+        height: 80px;
+    }
+    #utensils {
+        width: 103.5px;
+    }
+    h1 {
+        padding-top: 275px;
+        text-align: left;
+        margin-left: 15px;
+    }
+    #interactions {
+        position: absolute;
+        z-index: 2;
+        width: 768px;
+        background-color: #f2f2f2;
+        padding-left: 0;
+        padding: 25px 0;
+        opacity: 75%;
+        margin-top: 0;
+        justify-content: space-around;
+    }
+    #details {
+        text-align: center;
+    }
+    #container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px;
+    }
+    dl {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer p {
+        right: 190px;
+        bottom: 225px;
+    }
+    #cheesington {
+        bottom: 170px;
+        right: 60px;
+    }
+    #social {
+        position: relative;
+        bottom: 0;
+        width: 384px;
+        left: 350px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body, main, nav {
+        width: 1280px;
+    }
+    nav {
+        height: 120px;
+    }
+    #signup {
+        left: 1150px;
+        top: 25px
+    }
+    #utensils {
+        height: 120px;
+        width: 120px;
+    }
+    #searchbar {
+        top: 200px;
+        margin-left: 490px;
+    }
+    .foodicon {
+        right: -150px;
+        top: -16px;
+        height: 120px;
+    }
+    .foodicon span {
+        bottom: 80px;
+    }
+    #navicons {
+        background-color: transparent;
+    }
+    #navicons img {
+        transform:scale(.25);
+    }
+    h1 {
+        text-align: center;
+    }
+    #tacoshell {
+        display: flex;
+        flex-direction: row;
+        height: 800px
+    }
+    #interactions {
+        position: relative;
+        flex-direction: column;
+        width: 500px;
+        justify-content: space-evenly;
+        border: solid 3px #eb5428;
+        margin: 0;
+        opacity: 1;
+    }
+    #tacotext {
+        display: flex;
+        flex-direction: column;
+    }
+    #tacotext p {
+        line-height: 2em;
+    }
+    #detailwrapper {
+        background-color: #0D0D0D;
+        color: #7abfbf;
+    }
+    #detailwrapper h2 {
+        padding-top: 10px;
+    }
+    #details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #details li {
+        display: flex;
+        flex-direction: column;
+    }
+    dl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .dishwrapper {
+        flex-direction: column;
+    }
+    .dishwrapper img {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    #sides {
+        height: 375px
+    }
+    #cheesington {
+        right: 90px;
+    }
+    footer p {
+        right: 290px;
+        bottom: 560px;
+    }
+    #social {
+        width: 600px;
+        left: 675px;
+    }
+}
